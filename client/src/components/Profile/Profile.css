@@ -1,0 +1,149 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+svg.icon_user {
+  margin-bottom: 7px;
+}
+
+span.header_title_user {
+  margin-left: 0.7em;
+}
+
+span.header_title_pass {
+  margin-left: 0.7em;
+}
+/* avatar profile */
+
+.img-avatar-profile {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.upload-imgprofile {
+  opacity: 0;
+}
+
+.img-avatar-profile:hover {
+  opacity: 0.8;
+}
+
+.img-avatar-profile:hover .upload-imgprofile {
+  display: inline;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+}
+
+.upload-imgprofile {
+  display: none;
+  position: absolute;
+  top: 75px;
+  left: 47px;
+  font-weight: bold;
+  opacity: 0;
+  color: white;
+}
+
+input.ant-input.ant-input-disabled.profile-form-input {
+  width: 94%;
+}
+
+span.ant-input-password.profile-form-input.ant-input-affix-wrapper {
+  width: 94%;
+}
+
+h3.ant-typography.header_pass.changepassword {
+  margin-bottom: 30px;
+}
+
+.changepassword-btn {
+  text-align: right;
+  margin-right: 3.4em;
+  margin-bottom: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .changepassword-btn {
+    margin-right: 2px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .changepassword-btn {
+    margin-right: -20px;
+  }
+
+  .ant-row.ant-form-item.password-form {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+  }
+
+  span.ant-input-password.profile-form-input.ant-input-affix-wrapper {
+    width: 436px;
+  }
+  input.ant-input.ant-input-disabled.profile-form-input {
+    width: 436px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .changepassword-btn {
+    margin-right: -4px;
+  }
+
+  .ant-row.ant-form-item.password-form {
+    width: 620px;
+  }
+
+  span.ant-input-password.profile-form-input.ant-input-affix-wrapper {
+    width: 600px;
+  }
+  input.ant-input.ant-input-disabled.profile-form-input {
+    width: 600px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .changepassword-btn {
+    margin-right: 135px;
+  }
+
+  .ant-row.ant-form-item.password-form {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+  }
+
+  span.ant-input-password.profile-form-input.ant-input-affix-wrapper {
+    width: 100%;
+  }
+  input.ant-input.ant-input-disabled.profile-form-input {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .changepassword-btn {
+    margin-right: -15px;
+  }
+
+  .ant-row.ant-form-item.password-form {
+    width: 100%;
+  }
+}

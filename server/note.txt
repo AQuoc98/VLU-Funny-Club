@@ -1,0 +1,10 @@
+postman-Thao: https://www.getpostman.com/collections/d456def4c6b8b81b8a7b
+postman-Phong : https://www.getpostman.com/collections/f0b630b2fc7a527a67e8
+server: npm run debug
+client: npm start
+Admin : 	"userName":"admin",
+            "passWord":"123123"
+Student:    "userName":"phong1",
+	        "passWord":"123123",
+Staff:      "userName":"staff",
+	        "passWord":"123123",

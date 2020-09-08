@@ -1,0 +1,283 @@
+/* Extra small devices (phones, 600px and down) */
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .introduce-row1 {
+    margin: 10px 0px 20px 0px;
+  }
+
+  .row1-col1-title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .row1-col2-title p {
+    font-size: 1em;
+    margin-bottom: 0px;
+    color: #7f8c8d;
+    font-weight: 500;
+  }
+
+  .album-square {
+    margin: 0px 0px 20px 0px;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("/images/vanlang.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 5em;
+  }
+
+  .album-square .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
+  }
+
+  .introduce-row-3 {
+    margin-bottom: 30px;
+  }
+
+  .row3-col1 p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+  }
+
+  .introduce-card {
+    height: 280px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .introduce-icon {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .introduce-icon span {
+    font-size: 5em;
+  }
+
+  p.introduce-card-title {
+    color: #d35400;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: -10px;
+    font-size: 1.1em;
+  }
+
+  .introduce-card-description {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    margin-left: 8px;
+    margin-right: 5px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .introduce-row1 {
+    margin: 10px 0px 20px 0px;
+  }
+
+  .row1-col1-title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .row1-col2-title p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #7f8c8d;
+  }
+
+  .album-square {
+    margin: 2px 0px 30px 0px;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url("/images/vanlang.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 5em;
+  }
+
+  .album-square .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
+    transition: all 0.5s;
+  }
+
+  .row3-col1 p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .introduce-card {
+    height: 300px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .introduce-icon {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .introduce-icon span {
+    font-size: 6em;
+  }
+
+  p.introduce-card-title {
+    color: #d35400;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    height: 30px;
+  }
+
+  .introduce-card-description {
+    color: #7f8c8d;
+    font-size: 1.2em;
+    margin-left: 8px;
+    margin-right: 5px;
+    font-weight: 500;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .introduce-row1 {
+    margin-top: 25px;
+  }
+
+  .row1-col1-title p {
+    font-size: 1.6em;
+  }
+
+  .introduce-card {
+    height: 320px;
+  }
+
+  p.introduce-card-title {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+  }
+
+  .introduce-card-description {
+    font-size: 0.9em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .row1-col1-title p {
+    font-size: 1.7em;
+  }
+
+  .row1-col2-title p {
+    font-size: 1.25em;
+  }
+
+  .row3-col1 p {
+    font-size: 1.7em;
+  }
+
+  .introduce-card {
+    height: 260px;
+  }
+
+  p.introduce-card-title {
+    font-size: 1.1em;
+    margin-bottom: 3px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .introduce-row1 {
+    margin: 30px 0px 20px 0px;
+  }
+
+  .row1-col2-title p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    color: #7f8c8d;
+  }
+
+  .album-square {
+    height: 440px;
+  }
+
+  .album-square .overlay {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .album-square:hover .overlay {
+    opacity: 1;
+  }
+
+  .album-square:hover .overlay a {
+    transform: scale(1);
+  }
+
+  .row3-col1 p {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .introduce-card {
+    height: 330px;
+    transition: 0.6s;
+  }
+  .introduce-card:hover {
+    transition: 0.6s;
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+      0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  }
+
+  p.introduce-card-title {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .introduce-card-description {
+    font-size: 1.15em;
+  }
+}

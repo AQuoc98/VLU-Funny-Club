@@ -1,0 +1,72 @@
+.button-more {
+  margin-right: 0px;
+}
+
+.club-title {
+  border-bottom: 1px solid black;
+}
+
+.club-title h2 {
+  background: white;
+  display: inline-block;
+  position: relative;
+  padding: 0px 15px;
+  top: 24px;
+  left: 400px;
+  font-size: 24px;
+}
+
+.club-carditem {
+  width: 340px;
+  height: 432px;
+  margin: 24px 0px;
+  -webkit-box-shadow: 10px 10px 12px -11px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 12px -11px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 12px -11px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.club-carditem img {
+  width: 340px;
+  height: 250;
+}
+
+.club-carditem a.carditem-title {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  /* font-family: Arial, sans-serif; */
+  color: black;
+  margin: 4px 5px 0px 5px;
+}
+
+.club-carditem p {
+  font-size: 13px;
+  color: gray;
+  margin: 8px 5px 15px 5px;
+}
+
+.button {
+  margin-bottom: 20px;
+  position: relative;
+  left: 1014px;
+}
+
+/* xemthem */
+button.ant-btn.mr-right-top-2em.ant-btn-link {
+  font-size: 16px;
+}
+button.ant-btn.mr-right-top-2em.ant-btn-link:hover {
+  background-color: #ce3b0a;
+  box-shadow: 0px 0px 3px grey;
+}
+
+button.ant-btn.mr-right-top-2em.ant-btn-link {
+  color: white;
+  background-color: #ff6633;
+  height: 35px;
+  border-radius: 3px;
+  /* box-shadow: 0px 0px 5px black; */
+}

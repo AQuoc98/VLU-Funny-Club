@@ -1,0 +1,260 @@
+/* Cái này viết chung cho tất cả các card, nên khi config thì nên thêm class mới */
+
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.home-body-title-allclub {
+  font-weight: 700;
+  color: #253d52;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.allclub-card {
+  margin-top: -45px;
+  height: 420px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: 0.6s;
+}
+
+.allclub-card:hover {
+  transition: 0.6s;
+  border-color: transparent;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+.allclub-card:hover .club-card-img {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.allclub-card-img {
+  height: 210px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.6s;
+}
+
+.allclub-card-img:hover {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.cover-img {
+  overflow: hidden;
+}
+
+.allclub-card-title {
+  color: rgba(0, 0, 0, 0.85);
+  height: 50px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 6px 4px 0px 15px;
+  transition: 0.2s;
+  
+}
+
+.allclub-card-title:hover {
+  color: #f39c12;
+  transition: 0.2s;
+}
+
+.allclub-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.45);
+  margin: 4px 4px 15px 15px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* No search result */
+
+.nosearch-result {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nosearch-result-h3 {
+  color: #7f8c8d;
+}
+
+.nosearch-result-h5 {
+  color: #95a5a6;
+}
+
+.nosearch-result-img {
+  height: 300px;
+}
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1.home-body-title-allclub {
+    font-size: 1.7em;
+  }
+
+  div.allclub-card {
+    height: 400px;
+  }
+
+  p.allclub-card-title {
+    color: #f39c12;
+    height: 58px;
+  }
+
+  .allclub-card-description {
+    -webkit-line-clamp: 5;
+  }
+
+  .nosearch-result-img {
+    height: 200px;
+  }
+
+  .nosearch-result-h3 {
+    font-size: 1.3em;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .nosearch-result-h5 {
+    font-size: 1.15em;
+    width: 350px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  p.allclub-card-title {
+    color: #f39c12;
+    height: 58px;
+  }
+
+  .allclub-card-description {
+    -webkit-line-clamp: 5;
+  }
+
+  .nosearch-result-img {
+    height: 150px;
+  }
+
+  .nosearch-result-h3 {
+    font-size: 1.5em;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .nosearch-result-h5 {
+    font-size: 1.2em;
+    width: 350px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .allclub-card {
+    height: 540px;
+  }
+
+  .allclub-card-img {
+    height: 250px;
+  }
+
+  p.allclub-card-title {
+    font-size: 2em;
+    height: 88px;
+  }
+
+  .allclub-card-description {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  p.allclub-card-title {
+    font-size: 1.5em;
+    height: 70px;
+  }
+
+  .allclub-card-description {
+    font-size: 1.3em;
+  }
+
+  .nosearch-result-img {
+    height: 200px;
+  }
+
+  .nosearch-result-h3 {
+    font-size: 2em;
+    width: 600px;
+  }
+
+  .nosearch-result-h5 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .allclub-card {
+    height: 450px;
+  }
+
+  .allclub-card-img {
+    height: 210px;
+  }
+
+  p.allclub-card-title {
+    color: rgba(0, 0, 0, 0.85);
+    height: 55px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+
+  .allclub-card-description {
+    font-size: 1em;
+  }
+
+  /* No search result */
+
+  .nosearch-result {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nosearch-result-h3 {
+    color: #7f8c8d;
+  }
+
+  .nosearch-result-h5 {
+    color: #95a5a6;
+  }
+
+  .nosearch-result-img {
+    height: 300px;
+  }
+}

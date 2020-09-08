@@ -1,0 +1,29 @@
+ul.pagination {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px){
+    a.page-link{
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    a.page-link{
+        height: 35px;
+        width: 35px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

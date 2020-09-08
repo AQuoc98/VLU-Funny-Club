@@ -1,0 +1,562 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+  position: relative;
+}
+.site-layout-background {
+  background-color: #f3f4f6 !important;
+}
+.ant-picker.ant-picker-range.datePick {
+  width: 100%;
+}
+.btn_create_event {
+  width: 100%;
+}
+img.evemt_table_img {
+  height: 150px;
+}
+span.ant-tag.ant-tag-has-color.time_tren {
+  margin-bottom: 10px;
+}
+
+/* button table update remove */
+.ant-space.ant-space-horizontal.ant-space-align-center.remove_update_event {
+  min-width: 6.8em;
+  color: #1890ff;
+}
+
+.sub_icon_title {
+  margin-right: 10px;
+}
+.avatar_User {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+button.ant-btn.ant-btn-dangerous:hover {
+  color: #fff;
+  background-color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+}
+button.ant-btn.confirm_btn_student {
+  border: 1px solid #1890ff;
+}
+button.ant-btn.confirm_btn_student:hover {
+  color: #fff;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+}
+.ant-picker {
+  width: 100%;
+}
+button.ant-btn.btn_update_schedule {
+  color: #1890ff;
+  border: 1px solid #1890ff;
+}
+button.ant-btn.btn_update_schedule:hover {
+  color: #fff;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+}
+
+label.ant-form-item-required {
+  float: left;
+}
+
+.name_admin {
+  float: right;
+}
+span.ant-avatar.ant-avatar-circle.ant-avatar-icon {
+  float: right;
+  margin: 16px 10px;
+  display: block;
+}
+.item_student.row {
+  padding: 15px 0;
+  border: 1px solid #fff;
+  background-color: #fff;
+  margin-bottom: 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.avatar_confirm {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.confirm_icon_div {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+svg.confirm_icon.access {
+  color: #2ecc71;
+}
+svg.confirm_icon.remove {
+  color: #e74c3c;
+}
+.item_student.row:hover {
+  box-shadow: 0px 0px 20px #e7f4fb;
+  background-color: #ceeeff;
+  border: 1px solid #ceeeff;
+  transition: 0.4s;
+}
+
+.fullname_confirm {
+  font-weight: 700;
+  font-size: 1.03em;
+}
+.fullname_confirm span {
+  margin-left: 8px;
+}
+.row_content_confirm_header {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+svg.confirm_icon.access:hover {
+  color: #005d27;
+}
+svg.confirm_icon.remove:hover {
+  color: #6b0c02;
+}
+.confirm_icon_div {
+  cursor: pointer;
+}
+.img_preview {
+  width: 100%;
+  max-height: 400px;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  /* position: absolute; */
+  z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile:focus + label,
+.inputfile + label:hover {
+  border: 1px solid #1890ffa6;
+  cursor: pointer;
+}
+label.lable_input_file {
+  border: 1px solid #8080804f;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+  text-align: center;
+}
+.error_input_p {
+  color: #ff4d4f;
+  margin-bottom: 0;
+}
+.error_input_lable {
+  border: 1px solid #ff4d4f !important;
+  width: 100%;
+  padding: 4px;
+}
+.ant-form-item-label > label {
+  float: left;
+}
+.bat-buoc {
+  color: #e74c3c;
+  margin-right: 5px;
+}
+span.ant-input-suffix {
+  color: #bfbfbf;
+}
+.ant-spin-nested-loading {
+  min-height: 70em;
+  background-color: #fff;
+  padding: 35px 35px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px #b2bec394;
+}
+.ant-menu-item {
+  padding-left: 0px;
+}
+
+span.anticon.anticon-upload svg {
+  margin-bottom: 5px;
+  margin-right: 7px;
+}
+input.input_update {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  padding: 5px;
+}
+input.input_update:focus {
+  outline: none;
+  border: 1px solid #1890ff !important;
+}
+
+.error_input_lable:focus {
+  outline: none;
+}
+button.ant-btn.out_menu.ant-btn-primary.ant-btn-dangerous:hover {
+  color: #fff;
+  background: #ff7875;
+  border-color: #ff7875;
+}
+
+.img_logo_club {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.adminsytem-update-logo {
+  top: -136px;
+}
+
+.logo_club_admin.col-lg-4 {
+  /* position: absolute; */
+  top: 260px;
+  box-shadow: 0px 0px 7px #b2bec3e0;
+  padding: 0;
+  border-radius: 2px;
+  left: 60px;
+}
+.body_content_info_club {
+  background-color: white;
+  padding: 30px;
+  height: 100px;
+}
+.details_of_club {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #b2bec3;
+  padding: 20px 30px !important;
+  border-radius: 2px;
+  font-family: "Muli", sans-serif;
+}
+.details_of_club h2 {
+  font-family: "Muli", sans-serif;
+}
+header.ant-layout-header {
+  background-color: #fff;
+}
+.background_layout_header {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.site-layout-background {
+  position: relative;
+}
+.details_of_club.col-lg-7.offset-lg-5 {
+  margin-top: 30px;
+  border-radius: 3px;
+}
+.background_layout_header {
+  border-radius: 2px;
+  position: relative;
+}
+
+label.edit_background_header {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #0000005e;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+label.edit_background_header:hover {
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  opacity: 0.8;
+  transition: 0.15s;
+}
+.background_layout_header:hover label.edit_background_header {
+  display: block;
+}
+.row_content_confirm_header.row {
+  background-color: #2196f3;
+  padding: 13px;
+  border-radius: 2px;
+  color: white;
+}
+.body_content_info_club h2 {
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+  font-size: 2em;
+}
+
+.body_content_info_club p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+label.edit_background_header.update {
+  right: 195px;
+  width: 150px;
+  text-align: center;
+  background-color: rgba(24, 144, 255, 0.6);
+}
+label.edit_background_header.update:hover {
+  background-color: rgba(24, 144, 255, 1);
+}
+label.edit_background_header.cancel {
+  right: 370px;
+  width: 150px;
+  text-align: center;
+}
+.content_header_info.row {
+  position: absolute;
+  top: 350px;
+  width: 97%;
+}
+.logo_club_info {
+  background-color: white;
+}
+.img_logo_club {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+.logo_club_info {
+  padding: 0;
+  margin: 0px 20px;
+}
+.Detail_inFo {
+  background-color: #fff;
+  padding: 0px 35px;
+  margin: 0px 2%;
+}
+nav.nav.nav-tabs {
+  padding: 17px;
+}
+.blur_back {
+  opacity: 0.5;
+  pointer-events: none;
+}
+label.edit_background_header.edit_logo {
+  top: 110px;
+  right: 2px;
+  font-size: 10px;
+  background-color: #4164e3;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.edit_log {
+  position: absolute;
+  top: 100%;
+  margin: auto;
+  width: 65%;
+  left: 0;
+  right: 0;
+}
+a.cancel_log {
+  padding: 0px 10px;
+}
+a.save_log {
+  padding: 0px 13px;
+}
+
+.logo_club_info.col-lg-3 {
+  max-height: 355px;
+}
+
+.updateclub-btn {
+  margin-top: 25px;
+  text-align: right;
+}
+
+button.ant-btn.ant-btn-primary.ant-btn-lg {
+  padding: 9px;
+  font-weight: 400;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: white;
+  margin-left: 50px;
+  font-size: 14px;
+  transition: 0.3s;
+  width: 220px;
+  height: 41.6px;
+}
+
+input.btn_update_info {
+  padding: 9px;
+  font-weight: 400;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: white;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+  width: 220px;
+  /* margin-top: 20px; */
+}
+
+input.adminclub_btn_update_info {
+  padding: 9px;
+  font-weight: 400;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: white;
+  /* margin-left: 20px; */
+  font-size: 14px;
+  transition: 0.3s;
+  width: 220px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input.btn_update_info:focus {
+  outline: none;
+}
+
+input.btn_update_info:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+h5.h5_update_info {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.body_content_info_club p {
+  text-align: center;
+}
+.effec_update_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+a#uncontrolled-tab-example-tab-home {
+  font-weight: 600;
+}
+.Detail_inFo.col-lg-8 {
+  margin-bottom: 50px;
+}
+.img_struc {
+  width: 100%;
+  height: 550px;
+  margin-bottom: 20px;
+}
+textarea.input_update {
+  width: 100%;
+  height: 90px;
+  border-radius: 3px;
+}
+textarea.input_update:focus {
+  outline: none;
+  border: 1px solid #1890ff !important;
+}
+.Detail_inFo.col-lg-8 {
+  border-top: 4px solid #1890ff;
+}
+label.edit_background_header.updateFile_event {
+  width: 110px;
+  right: 80px;
+}
+
+label.edit_background_header.cancel.updateFile_event {
+  right: 210px;
+}
+.col-lg-8.update_text_event {
+  background-color: white;
+  padding: 15px 40px;
+}
+img.no_data {
+  width: 600px;
+  display: block;
+  margin: auto;
+  box-shadow: 0px 0px 5px #b7b7b763;
+  height: 400px;
+}
+.item_student.row {
+  margin: 0;
+}
+.row_content_confirm_header.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+h2.h2_confirm_student {
+  font-weight: 600;
+}
+textarea.input_update {
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+.total_student_dash {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0px 0px 25px #80808040;
+}
+p.header_of_dashboar {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #1890ff;
+  margin: 5px 0px;
+}
+.icon_number {
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: #1890ff;
+  border-radius: 50%;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  line-height: 50px;
+}
+.col-lg-3 {
+  text-align: center;
+  margin: auto;
+}
+.icon_number_default {
+  font-size: 3em;
+  color: #1890ff;
+}
+p.numnber_of_dashboard {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #455a64;
+}
+.bang_dieu_khien {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.logo_club_info.col-lg-3 {
+  max-height: 355px;
+  margin: initial;
+  margin-left: 25px;
+}
+
+span.ant-input-search.search_event.ant-input-search-enter-button.ant-input-search-large.ant-input-group-wrapper.ant-input-group-wrapper-lg {
+  margin-bottom: 20px;
+  /* width: 100%; */
+}
+.confirm_icon_div {
+  float: left;
+}
+.ant-spin-nested-loading {
+  padding-bottom: 70px;
+}

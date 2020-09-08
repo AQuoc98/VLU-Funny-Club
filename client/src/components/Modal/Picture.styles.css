@@ -1,0 +1,85 @@
+
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+.Picture-area {
+  width: 100%;
+  background-image: url("/images/PTSdn.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: 0px 0px 0px -14px;
+}
+
+.Picture-area-1 {
+  width: 100%;
+  background-image: url("/images/PTSdk.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: 0px 0px 0px -14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Picture-area {
+    background-position: 50% 4%;
+    height: 150px;
+    width: 357px;
+    margin: 0px 0px 10px -14px;
+  }
+
+  .Picture-area-1 {
+    background-position: 50% 4%;
+    height: 150px;
+    width: 356px;
+    margin: 0px 0px 10px -14px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Picture-area {
+    background-position: 50% 4%;
+    height: 210px;
+    width: 498px;
+  }
+
+  .Picture-area-1 {
+    background-position: 50% 4%;
+    height: 210px;
+    width: 498px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .Picture-area {
+    background-position: 50% 4%;
+    height: 340px;
+    width: 799px;
+  }
+
+  .Picture-area-1 {
+    background-position: 50% 4%;
+    height: 340px;
+    width: 799px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Picture-area {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin: 0px 0px 0px -14px;
+  }
+
+  .Picture-area-1 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin: 0px 0px 0px -14px;
+  }
+}

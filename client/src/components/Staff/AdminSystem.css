@@ -1,0 +1,68 @@
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#AdminSystem .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+#AdminSystem .site-layout .site-layout-background {
+  background: #fff;
+}
+img.logo_admin {
+  width: 99.8%;
+  background-color: #3f4d67;
+}
+.ant-layout-sider-children {
+  box-shadow: 0px 0px 15px #80808080;
+}
+.site-layout .site-layout-background {
+  background: #f3f4f6;
+}
+span.ant-avatar.ant-avatar-circle.ant-avatar-icon {
+  float: right;
+  margin: 16px;
+  display: block;
+}
+section.ant-layout.site-layout {
+  background-color: #f3f4f6;
+}
+
+.site-layout-background.custom-body-color {
+  background-color: #f3f4f6;
+}
+.thong-ke {
+  background-color: white;
+  border-radius: 5px;
+  border-left: 0.25rem solid #1cc88a !important;
+  box-shadow: 1px 3px 4px #b5b5b5;
+  width: 300px;
+  margin-bottom: 20px;
+}
+p.p-thong-ke-green {
+  color: #1cc88a;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  text-align: center;
+}
+.m-auto.col-lg-4 {
+  font-size: 35px;
+}
+
+h5.statistic-totalclub {
+  text-align: center;
+}
+
+td.ant-table-cell {
+  width: 500px;
+}
+
+th.ant-table-cell {
+  font-size: 1em;
+}

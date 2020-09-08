@@ -1,0 +1,39 @@
+.chart_club {
+  margin-top: 5px;
+}
+canvas.chartjs-render-monitor {
+  background-color: white;
+}
+h3.head_chart_club {
+  margin-top: 1em;
+}
+.form_add_club {
+  background-color: #fff;
+  padding: 2em 3em !important;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 15px #80808021;
+}
+.button_add_club {
+  text-align: center;
+}
+button.ant-btn.button_upload_addClub {
+  width: 100%;
+}
+
+span.upload_addClub {
+  width: 100%;
+}
+
+.ant-upload.ant-upload-select.ant-upload-select-text {
+  width: 100%;
+}
+.input_Phone .ant-input-number {
+  width: 100% !important;
+}
+
+.input_Phone .ant-input-number-handler-wrap {
+  display: none !important;
+}
+.btn_add_club {
+  width: 100%;
+}

@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  /* font-family: "Roboto", sans-serif; */
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.banner-club {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  margin-top: 86px;
+  margin-bottom: 20px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* introduce */
+
+.introduce {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 8px #b7b7b7;
+  border-radius: 5px;
+}
+
+.introduce-col {
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px #b7b7b7;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.name-club {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+button.introduce-button {
+  margin-top: 10px;
+}
+
+ul.ant-rate.introduce-rate {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+/* information */
+
+.information {
+  height: 410px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ant-card.card-information.ant-card-bordered {
+  line-height: 2.25;
+  font-size: 1em;
+  width: 100%;
+  height: 410px;
+  box-shadow: 0px 0px 5px #b7b7b7;
+  border-radius: 5px;
+}
+
+.ant-card-head-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: left;
+}
+
+.card-information span {
+  margin: 0px 10px 0px 10px;
+}
+
+.information-button-col.col-sm-12 {
+  text-align: right;
+}
+
+.information-button {
+  margin: 10px 0px;
+}
+
+/* Đánh giá */
+
+.rate {
+  height: 410px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ant-card.card-rate.ant-card-bordered {
+  line-height: 2.25;
+  font-size: 1em;
+  width: 100%;
+  height: 410px;
+  box-shadow: 0px 0px 5px #b7b7b7;
+  border-radius: 5px;
+}
+
+.name-member {
+  font-size: 1.2em;
+  margin-bottom: 2px;
+}
+
+textarea.input-feedback-form.form-control {
+  margin-top: 15px;
+  resize: none;
+}
+
+.rate-button-col.col-sm-12 {
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* New Event */
+
+.event {
+  height: 550px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ant-card.card-event.ant-card-bordered {
+  line-height: 2.25;
+  font-size: 1em;
+  width: 100%;
+  height: 550px;
+  box-shadow: 0px 0px 5px #b7b7b7;
+  border-radius: 5px;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  background: #688bca;
+  overflow: hidden;
+  line-height: 50px;
+}
+
+div.img-event {
+  width: 600px;
+  height: 280px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.img-event img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.title-event {
+  /* overflow: hidden; */
+  font-size: 1.25em;
+  color: #ffffff;
+  display: block;
+  height: 10px;
+}
+
+p.date-event {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+span.date-event-span {
+  margin-right: 2px;
+  position: relative;
+  top: -3px;
+}
+
+/* Lịch trình */
+
+.schedule {
+  height: 550px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ant-card.card-schedule.ant-card-bordered {
+  line-height: 2.25;
+  font-size: 1em;
+  width: 100%;
+  height: 550px;
+  box-shadow: 0px 0px 5px #b7b7b7;
+  border-radius: 5px;
+}
+
+.ant-picker.schedule-date-filter {
+  margin-bottom: 20px;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 250px;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+/* View rating */
+
+.view-rate {
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ant-card.card-viewrate.ant-card-bordered {
+  line-height: 2.25;
+  font-size: 1em;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 0px 5px #b7b7b7;
+  border-radius: 5px;
+}
+
+.view-rate-overview {
+  box-shadow: 0px 0px 5px #b7b7b7;
+  border-radius: 5px;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+
+.name-member-feedback {
+  font-size: 1.5em;
+  height: 20px;
+}
+
+.feedback {
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.feedback-pagination {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.link-xem-them {
+  cursor: pointer;
+  color: #36C8CF;
+}

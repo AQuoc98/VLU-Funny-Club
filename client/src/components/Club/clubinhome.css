@@ -1,0 +1,188 @@
+/* Card */
+/* Cái này viết chung cho tất cả các card, nên khi config thì nên thêm class mới */
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1.home-body-title-club {
+  margin-top: -24px;
+  margin-bottom: 0px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.club-card {
+  margin-top: -45px;
+  height: 420px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: 0.6s;
+}
+
+.club-card:hover {
+  transition: 0.6s;
+  border-color: transparent;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+.club-card:hover .club-card-img {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.club-card-img {
+  height: 210px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.6s;
+}
+
+.club-card-img:hover {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.cover-img {
+  overflow: hidden;
+}
+
+p.club-card-title {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 6px 4px 0px 15px;
+  transition: 0.2s;
+  height: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.club-card-title:hover {
+  color: #f39c12;
+  transition: 0.2s;
+}
+
+p.club-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.45);
+  margin: 4px 4px 15px 15px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  h1.home-body-title-club {
+    margin-top: -10px;
+  }
+
+  .club-card {
+    height: 400px;
+  }
+
+  p.club-card-title {
+    color: #f39c12;
+    margin-bottom: 10px;
+    height: 58px;
+    -webkit-line-clamp: 2;
+  }
+
+  p.club-card-description {
+    -webkit-line-clamp: 5;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1.home-body-title-club {
+    font-size: 2.5em !important;
+  }
+
+  .club-card {
+    height: 550px;
+  }
+
+  .club-card-img {
+    height: 300px;
+  }
+
+  p.club-card-title {
+    color: #f39c12;
+    font-size: 1.4em;
+    height: 68px;
+    -webkit-line-clamp: 2;
+  }
+
+  p.club-card-description {
+    font-size: 1.2em;
+    -webkit-line-clamp: 5;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .club-card {
+    height: 560px;
+  }
+
+  .club-card-img {
+    height: 320px;
+  }
+
+  p.club-card-title {
+    font-size: 1.7em;
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .club-card {
+    height: 440px;
+  }
+
+  .club-card-img {
+    height: 200px;
+  }
+
+  p.club-card-title {
+    font-size: 1.2em;
+    height: 55px;
+  }
+
+  p.club-card-description {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .club-card {
+    height: 420px;
+  }
+
+  .club-card-img {
+    height: 210px;
+  }
+
+  p.club-card-title {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.3em;
+    height: 57px;
+    margin-top: 10px;
+
+    -webkit-line-clamp: 2;
+  }
+
+  p.club-card-description {
+    font-size: 1.15em;
+
+    -webkit-line-clamp: 5;
+  }
+}

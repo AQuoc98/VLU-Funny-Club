@@ -1,0 +1,9 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25em;
+  width: 40em;
+  margin: auto;
+  float: none;
+}

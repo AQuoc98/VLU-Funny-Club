@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mrtop-2em {
+  margin-top: 2em;
+}
+
+.mr-right-top-2em {
+  margin-top: 1em;
+  margin-right: 0.9em;
+}
+
+.mrbot-2em {
+  margin-bottom: 5em;
+}
+
+.br-left-right {
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+
+#chooseArea {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5em;
+}
+
+#chooseArea div {
+  flex-grow: 1;
+  flex-basis: 300px;
+  cursor: pointer;
+}
+
+#chooseArea div:nth-of-type(2) {
+  text-align: end;
+  flex: 1;
+}
+#components-layout-demo-fixed .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-card {
+  border-radius: 5px;
+}
+.ant-card-cover img {
+  border-radius: 5px 5px 0 0 !important	;
+}
+
+
+

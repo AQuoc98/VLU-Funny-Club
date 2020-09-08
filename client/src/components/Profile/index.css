@@ -1,0 +1,20 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+.profile-page {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  background: white;
+}
+
+
+button#rc-tabs-1-tab-1 {
+  outline: none;
+}
+
+button#rc-tabs-1-tab-2 {
+  outline: none;
+}

@@ -1,0 +1,165 @@
+/* Cái này viết chung cho tất cả các card, nên khi config thì nên thêm class mới */
+
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+.home-body-title-allevent {
+  font-weight: 700;
+  color: #253d52;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.allevent-card {
+  margin-top: -45px;
+  height: 420px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: 0.6s;
+}
+
+.allevent-card:hover {
+  transition: 0.6s;
+  border-color: transparent;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+.allevent-card:hover .club-card-img {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.allevent-card-img {
+  height: 210px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.6s;
+}
+
+.allevent-card-img:hover {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.cover-img {
+  overflow: hidden;
+}
+
+.allevent-card-title {
+  color: rgba(0, 0, 0, 0.85);
+  height: 50px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 6px 4px 0px 15px;
+  transition: 0.2s;
+}
+
+.allevent-card-title:hover {
+  color: #f39c12;
+  transition: 0.2s;
+}
+
+.allevent-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.45);
+  margin: 4px 4px 15px 15px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1.home-body-title-allevent {
+    font-size: 1.7em;
+  }
+
+  div.allevent-card {
+    height: 400px;
+  }
+
+  p.allevent-card-title {
+    color: #f39c12;
+    height: 58px;
+  }
+
+  .allevent-card-description {
+    -webkit-line-clamp: 5;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  p.allevent-card-title {
+    color: #f39c12;
+    height: 58px;
+  }
+
+  .allevent-card-description {
+    -webkit-line-clamp: 5;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .allevent-card {
+    height: 540px;
+  }
+
+  .allevent-card-img {
+    height: 250px;
+  }
+
+  p.allevent-card-title {
+    font-size: 2em;
+    height: 88px;
+  }
+
+  .allevent-card-description {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  p.allevent-card-title {
+    font-size: 1.5em;
+    height: 70px;
+  }
+
+  .allevent-card-description {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .allevent-card {
+    height: 450px;
+  }
+
+  .allevent-card-img {
+    height: 210px;
+  }
+
+  p.allevent-card-title {
+    color: rgba(0, 0, 0, 0.85);
+    height: 55px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+
+  .allevent-card-description {
+    font-size: 1em;
+  }
+}
