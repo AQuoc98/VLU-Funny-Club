@@ -17,23 +17,22 @@ app.use(cors());
 const port = process.env.PORT || 5000;
 
 // mongoose connect to db
-mongoose
-  .connect(
-    mongoURI,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-    },
-    // callback connect on port server
-    () => {
-      app.listen(port, () => {
-        console.log("connect success full " + port);
-      });
-    }
-  )
-  .then(() => console.log("Connected to DB"))
-  .catch((err) => console.log("TCL: err", err));
+mongoose.connect(
+  mongoURI,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  },
+  // callback connect on port server
+  () => {
+    app.listen(port, () => {
+      console.log("connect success full " + port);
+    });
+  }
+);
+// .then(() => console.log("Connected to DB"))
+// .catch((err) => console.log("TCL: err", err));
 
 // Middleware : body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
