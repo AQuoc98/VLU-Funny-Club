@@ -1,0 +1,1494 @@
+{
+	"info": {
+		"_postman_id": "a942f3e4-f475-4f29-9a13-c261d3f48733",
+		"name": "SEP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avataUser",
+									"type": "file",
+									"src": "/D:/Entertainment/image/169942.jpg"
+								},
+								{
+									"key": "userName",
+									"value": "phong1",
+									"type": "text"
+								},
+								{
+									"key": "passWord",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "passWord2",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "fullName",
+									"value": "phong",
+									"type": "text"
+								},
+								{
+									"key": "mssv",
+									"value": "t17m856",
+									"type": "text"
+								},
+								{
+									"key": "major",
+									"value": "cntt",
+									"type": "text"
+								},
+								{
+									"key": "classMajor",
+									"value": "k23t3",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/student/registerUser/ImageAvatar",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"registerUser",
+								"ImageAvatar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"admin\",\n\t\"passWord\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/student/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/student/getAllUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"getAllUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{Authorization}}"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/student/5ef6d8d34ecd201d246c37e1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"5ef6d8d34ecd201d246c37e1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\":\"123123\",\n\t\"newPassword\":\"123123\",\n\t\"password2\":\"123123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/student/updatePassword",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload avatar for user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/Phong/Downloads/84503392_110378410525865_5098112719924494336_n.jpg"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/student/upload-avatar/users/5ec77db3cbd2163a0ca9dc83",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"upload-avatar",
+								"users",
+								"5ec77db3cbd2163a0ca9dc83"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add student for club",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"requestConfirm\":\"học hỏi bla bla ádasd ád ád á đá a d\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/student/joinClub/5ef2d864f394483efcfbb2d4",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"student",
+								"joinClub",
+								"5ef2d864f394483efcfbb2d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See Student on Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/event/searchEvent",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"searchEvent"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userName\":\"admin\",\n\t\"passWord\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/admin/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Staff",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"phongStaff\",\r\n    \"passWord\":\"213\",\r\n    \"fullName\":\"staff 123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/admin/registerStaff",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"registerStaff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Banner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageBanner",
+									"type": "file",
+									"src": "/D:/Entertainment/image/254268.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/banner/create/imageBanner",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"banner",
+								"create",
+								"imageBanner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Banner",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/banner/delete/5f159d6057896824503439a1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"banner",
+								"delete",
+								"5f159d6057896824503439a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Banner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/banner/getAllBanner",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"banner",
+								"getAllBanner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Banner For User Home Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/banner/getAllBannerForHomePage",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"banner",
+								"getAllBannerForHomePage"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Club",
+			"item": [
+				{
+					"name": "create club",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "fingerPrint",
+								"value": "213",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "clubDesc",
+									"value": "Tạo ra sân chơi những sinh viên đam mê khoa học và kỹ thuật tìm hiểu về chuyên nghành",
+									"type": "text"
+								},
+								{
+									"key": "clubHistory",
+									"value": "Năm 2019: Đạt được cup VLU IT",
+									"type": "text"
+								},
+								{
+									"key": "imageClub",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								},
+								{
+									"key": "clubGroupType",
+									"value": "khoa",
+									"type": "text"
+								},
+								{
+									"key": "clubPhone",
+									"value": "0123456789",
+									"type": "text"
+								},
+								{
+									"key": "clubEmail",
+									"value": "cluClub@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "clubFace",
+									"value": "facebook.com/clubTech",
+									"type": "text"
+								},
+								{
+									"key": "clubLogo",
+									"type": "file",
+									"src": "/D:/Entertainment/image/papers.co-ho90-flare-girl-shower-sexy-3840x2400.jpg"
+								},
+								{
+									"key": "clubPurpose",
+									"value": "⦁\tThông qua hoạt động của Câu lạc bộ, góp phần thực hiện mục tiêu giáo dục toàn diện của nhà trường: tạo ra sân chơi những sinh viên đam mê khoa học và kỹ thuật tìm hiểu về chuyên nghành.\n⦁\tTạo điều kiện cho sinh viên trau dồi kiến thức về lĩnh vực Công Nghệ Thông Tin, cũng như rèn luyện, phát triển sở thích, năng khiếu và các kỹ năng, nghiệp vụ chuyên môn trong thực tiễn, qua đó giúp cho sinh viên có các cơ hội nghề nghiệp trong tương lai.\n",
+									"type": "text"
+								},
+								{
+									"key": "clubFunction",
+									"value": "⦁\tVan Lang Tech club hoạt động trong lĩnh vực công nghệ thông tin và những kỹ năng nghề nghiệp.\n⦁\tCâu lạc bộ các hoạt động học tập, rèn luyện, nghiên cứu khoa học công nghệ, tạo sân chơi lành mạnh cho sinh viên đam mê công nghệ trường Đại học Văn Lang.\n⦁\tKết hợp giữa lý thuyết và thực tế bằng các chuyến đi tham quan doanh nghiệp và các đề tài nghiên cứu, các cuộc thi về công nghệ.\n",
+									"type": "text"
+								},
+								{
+									"key": "clubStructureImage",
+									"type": "file",
+									"src": "/D:/Entertainment/image/papers.co-ho74-sandra-kubicka-playboy-girl-model-sexy-3840x2400.jpg"
+								},
+								{
+									"key": "clubName",
+									"value": "CÔNG NGHỆ TRƯỜNG ĐẠI HỌC VĂN LANG 11:37",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/create/ImageClub",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"create",
+								"ImageClub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/club/getAllClub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"getAllClub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Club By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/club/getClubById/5f17dc4b2174cf2c70ee7cff",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"getClubById",
+								"5f17dc4b2174cf2c70ee7cff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fillter Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/club/fillterClub",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"fillterClub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send feedback",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"feedBack\":\"tada tada\",\r\n    \"rate\":\"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/sendFeedBackOfClub/5ef99f590f7d12337c4ab417",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"sendFeedBackOfClub",
+								"5ef99f590f7d12337c4ab417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Feedback of club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/club/getAllFeedback/5ef99f590f7d12337c4ab417",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"getAllFeedback",
+								"5ef99f590f7d12337c4ab417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "clubDesc",
+									"value": "Tạo ra sân chơi những sinh viên đam mê khoa học và kỹ thuật tìm hiểu về chuyên nghành",
+									"type": "text"
+								},
+								{
+									"key": "clubHistory",
+									"value": "Năm 2019: Đạt được cup VLU IT",
+									"type": "text"
+								},
+								{
+									"key": "clubGroupType",
+									"value": "khoa",
+									"type": "text"
+								},
+								{
+									"key": "clubPhone",
+									"value": "0123456789",
+									"type": "text"
+								},
+								{
+									"key": "clubEmail",
+									"value": "cluClub@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "clubFace",
+									"value": "facebook.com/clubTech",
+									"type": "text"
+								},
+								{
+									"key": "clubPurpose",
+									"value": "⦁\tThông qua hoạt động của Câu lạc bộ, góp phần thực hiện mục tiêu giáo dục toàn diện của nhà trường: tạo ra sân chơi những sinh viên đam mê khoa học và kỹ thuật tìm hiểu về chuyên nghành.\n⦁\tTạo điều kiện cho sinh viên trau dồi kiến thức về lĩnh vực Công Nghệ Thông Tin, cũng như rèn luyện, phát triển sở thích, năng khiếu và các kỹ năng, nghiệp vụ chuyên môn trong thực tiễn, qua đó giúp cho sinh viên có các cơ hội nghề nghiệp trong tương lai.\n",
+									"type": "text"
+								},
+								{
+									"key": "clubFunction",
+									"value": "⦁\tVan Lang Tech club hoạt động trong lĩnh vực công nghệ thông tin và những kỹ năng nghề nghiệp.\n⦁\tCâu lạc bộ các hoạt động học tập, rèn luyện, nghiên cứu khoa học công nghệ, tạo sân chơi lành mạnh cho sinh viên đam mê công nghệ trường Đại học Văn Lang.\n⦁\tKết hợp giữa lý thuyết và thực tế bằng các chuyến đi tham quan doanh nghiệp và các đề tài nghiên cứu, các cuộc thi về công nghệ.\n",
+									"type": "text"
+								},
+								{
+									"key": "clubName",
+									"value": "CÔNG NGHỆ TRƯỜNG ĐẠI HỌC VĂN LANG 11:37",
+									"type": "text"
+								},
+								{
+									"key": "imageClub",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								},
+								{
+									"key": "clubLogo",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								},
+								{
+									"key": "clubStructureImage",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/update/ImageClub/5f054ad50fe83f58d70f4690",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"update",
+								"ImageClub",
+								"5f054ad50fe83f58d70f4690"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Banner Club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageClub",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/updateFileImageBanner/ImageClub/5ef99f590f7d12337c4ab417",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"updateFileImageBanner",
+								"ImageClub",
+								"5ef99f590f7d12337c4ab417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update InFo Text",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clubDesc\":\"ưqe\",\r\n    \"clubEmail\":\"qưe\",\r\n    \"clubFace\":\"qưe\",\r\n    \"clubFunction\":\"qưe\",\r\n    \"clubHistory\":\"qưe\",\r\n    \"clubName\":\"qưe\",\r\n    \"clubPhone\":\"qưe\",\r\n    \"clubPurpose\":\"qưe\",\r\n    \"clubGroupType\":\"truong\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/updateInfoText/5ef99f590f7d12337c4ab417",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"updateInfoText",
+								"5ef99f590f7d12337c4ab417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Logo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageClub",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/updateFileLogo/ImageClub/5ef99f590f7d12337c4ab417",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"updateFileLogo",
+								"ImageClub",
+								"5ef99f590f7d12337c4ab417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Struc",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageClub",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/updateFileStruc/ImageClub/5ef99f590f7d12337c4ab417",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"updateFileStruc",
+								"ImageClub",
+								"5ef99f590f7d12337c4ab417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Club",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/club/delete/5f1464acb5b11c28934cea88",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"delete",
+								"5f1464acb5b11c28934cea88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Chart Student By Club Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/club/getChartStudentOfClub/5f1bf9d4cbc5d131d8f826ec",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"getChartStudentOfClub",
+								"5f1bf9d4cbc5d131d8f826ec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"searchFeedBack\":\"dsadsadsad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/searchFeedBack/5f1bf9d4cbc5d131d8f826ec",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"searchFeedBack",
+								"5f1bf9d4cbc5d131d8f826ec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Schedule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"searchSchedule\":\"hợp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/searchSchedule/5f1d2efa1dbd9d3f0807ea1b",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"searchSchedule",
+								"5f1d2efa1dbd9d3f0807ea1b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ClubAdmin",
+			"item": [
+				{
+					"name": "Access For Student Join Club",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/adminClub/accessForStudent/5f17dc8d2174cf2c70ee7d00/5f17dc4b2174cf2c70ee7cff",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"adminClub",
+								"accessForStudent",
+								"5f17dc8d2174cf2c70ee7d00",
+								"5f17dc4b2174cf2c70ee7cff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Access Admin For Club",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/adminClub/accessAdminForClub/5f17dc8d2174cf2c70ee7d00/5f17dc4b2174cf2c70ee7cff",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"adminClub",
+								"accessAdminForClub",
+								"5f17dc8d2174cf2c70ee7d00",
+								"5f17dc4b2174cf2c70ee7cff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/adminClub/removeAdminClub/5f1bf6dada6f421f045d9342/5f1bf9d4cbc5d131d8f826ec",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"adminClub",
+								"removeAdminClub",
+								"5f1bf6dada6f421f045d9342",
+								"5f1bf9d4cbc5d131d8f826ec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Admin Club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/adminClub/removeAdminClub/5f1bf6dada6f421f045d9342/5f1bf9d4cbc5d131d8f826ec",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"adminClub",
+								"removeAdminClub",
+								"5f1bf6dada6f421f045d9342",
+								"5f1bf9d4cbc5d131d8f826ec"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageEvent",
+									"type": "file",
+									"src": "/D:/Entertainment/image/427408.jpg"
+								},
+								{
+									"key": "eventTitle",
+									"value": "Tổ chức sinh nhật cho các thành viên tháng 6",
+									"type": "text"
+								},
+								{
+									"key": "eventDesc",
+									"value": "Sự kiện tổ chức hàng tháng, chúc mừng sinh nhật các bạn trong tháng",
+									"type": "text"
+								},
+								{
+									"key": "eventAddress",
+									"value": "VLU CS3",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "20-02-2020",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/event/create/ImageEvent",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"create",
+								"ImageEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Event",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/event/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"searchEvent\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/event/searchEvent/5f17dc4b2174cf2c70ee7cff",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"searchEvent",
+								"5f17dc4b2174cf2c70ee7cff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event by ID Club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/event/getEventClub/5f0c367e95e9da35607244e8",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"getEventClub",
+								"5f0c367e95e9da35607244e8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/event/delete/5f156806d9587921d05d7b2a",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"delete",
+								"5f156806d9587921d05d7b2a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/event/getIdById/5ef32230b1632b02142e8467",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"getIdById",
+								"5ef32230b1632b02142e8467"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event File",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageEvent",
+									"type": "file",
+									"src": "/D:/Entertainment/image/254268.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/event/updateFile/ImageEvent/5f095af07a003f1d1c075575",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"updateFile",
+								"ImageEvent",
+								"5f095af07a003f1d1c075575"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Text",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startTime\": \"14-07-2020\",\r\n    \"endTime\": \"14-07-2020\",\r\n    \"eventTitle\": \"Chúng ta khôgn thuộc về nhau\",\r\n    \"eventDesc\": \"qưe\",\r\n    \"eventAddress\": \"qưe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/event/update/5f03ddaf94f1f52dd916ed29",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"event",
+								"update",
+								"5f03ddaf94f1f52dd916ed29"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Schedule",
+			"item": [
+				{
+					"name": "Create Schedule Club",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2020\",\r\n    \"room\":\"5.07\",\r\n    \"content\":\"Thảo luận chuyên đề JS cơ bản\",\r\n    \"note\":\"Mang theo laptop cá nhân\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/addSchedule/5f0c367e95e9da35607244e8",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"addSchedule",
+								"5f0c367e95e9da35607244e8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Schedule Of Club",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/getAllScheduleOfClub/5f0c367e95e9da35607244e8",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"getAllScheduleOfClub",
+								"5f0c367e95e9da35607244e8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Schedule",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"room\":\"minh hy 123\",\r\n    \"content\":\"minh hy yeu vinh bui\",\r\n    \"note\":\"mang bcs\",\r\n    \"date\":\"05/12/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/club/updateSchedule/5f0d3e31786b9012688b130a",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"updateSchedule",
+								"5f0d3e31786b9012688b130a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Schedule",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/club/deleteSchedule/123213",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"club",
+								"deleteSchedule",
+								"123213"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

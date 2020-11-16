@@ -1,0 +1,19 @@
+/* Link */
+
+CODE : https://sep-team11@dev.azure.com/sep-team11/SEP-SCRUM/_git/SEP-SCRUM
+POSTMAN :  https://www.getpostman.com/collections/f0b630b2fc7a527a67e8
+WEB : https://clubvanlanguniversity.z22.web.core.windows.net/
+
+
+/* Account to Test */
+tk admin : admin - 123123
+tk staff : staff - 123 + staff1 - 123 + staff2 - 123 + staff3 - 123
+test - 123123
+test1 - 123123
+test2 - 123123
+test3 - 123123
+test4 - 123123
+test5 - 123123
+test6 - 123123
+test7 - 123456
+test8 - 123456
